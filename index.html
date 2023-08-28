@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jokenpo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="principal">
+        <h1 class="titulo" id="titulo">
+            Jokenpo
+        </h1>
+        <div class="txt" id="placar">
+
+            <div id="jogador">
+                <h2 class="nome nome1" id="jogadorNome">
+                    Marco Aurélio
+                </h2>
+                <p class="txt" id="jogadorPontos">
+                    0
+                </p>
+                <ul class="txt" id="jogadorEscolha">
+                    <li class="caixa">
+                        <a class="espaco" id="jogadorEscolha1" onclick="jogar(1)">
+                            <img src="pedra.png" alt="">
+                        </a>
+                    </li>
+                    <li class="caixa">
+                        <a class="espaco" id="jogadorEscolha2" onclick="jogar(2)">
+                            <img src="papel.png" alt="">
+                        </a>
+                    </li>
+                    <li class="caixa">
+                        <a class="espaco" id="jogadorEscolha3" onclick="jogar(3)">
+                            <img src="tesoura.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="titulo" id="versus">
+                VS
+            </div>
+            <div id="computador">
+                <h2 class="nome nome2" id="computadorNome">
+                    Computador
+                </h2>
+                <p class="txt" id="computadorPontos">
+                    0
+                </p>
+
+                <ul id="computadorEscolha">
+                    <li class="caixa">
+                        <a class="espaco" id="computadorEscolha1">
+                            <img src="pedra.png" alt="">
+                        </a>
+                    </li>
+                    <li class="caixa">
+                        <a class="espaco" id="computadorEscolha2">
+                            <img src="papel.png" alt="">
+                        </a>
+                    </li>
+                    <li class="caixa">
+                        <a class="espaco" id="computadorEscolha3">
+                            <img src="tesoura.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="titulo" id="mensagem">&nbsp;</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

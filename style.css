@@ -1,0 +1,157 @@
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a {
+    opacity: 0.2;
+    transition: ease-in-out 0.3s;
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}
+
+body {
+    background-color: #000;
+}
+
+@font-face {
+    font-family: "bangers";
+    src: url(Bangers/Bangers-Regular.ttf);
+}
+
+@font-face {
+    font-family: "anton";
+    src: url(Anton/Anton-Regular.ttf);
+}
+
+#jogadorPontos,
+#computadorPontos {
+    margin: 20px;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+
+
+}
+
+.caixa {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+
+    margin: 0px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jogador,
+#computador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    margin-top: 50px;
+}
+
+#jogadorEscolha,
+#computadorEscolha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+    height: 200px;
+}
+
+#placar {
+    display: flex;
+
+    width: 100vw;
+    height: 400px;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.espaco {
+    margin: 25px;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 600px;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+
+}
+
+.txt {
+    font: 600 40px "anton";
+    color: #fff;
+}
+
+.titulo {
+    font: 600 80px "bangers";
+    color: #fff;
+}
+
+.nome {
+    font: 600 40px "anton";
+    color: #fff;
+}
+
+.nome1 {
+    color: #30ca11;
+}
+
+.nome2 {
+    color: #d81313;
+}
+
+li {
+    list-style: none;
+}
+
+#versus {
+    background: url(fogo.gif) center/cover;
+
+    color: transparent;
+    display: inline-block;
+
+    color: #fff;
+
+    width: 150px;
+    height: 120px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
